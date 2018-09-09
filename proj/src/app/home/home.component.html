@@ -1,0 +1,38 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Bootstrap Tutorial</h1> 
+    <p>Bootstrap is the most popular HTML, CSS...</p> 
+  </div>
+</div>
+<div class="container">
+  <table class="table table-bordered">
+    <thead class="thead-light">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of jsonData | slice:y:x">
+          <td>
+            {{ data.name }}
+          </td>
+          <td>
+            {{ data.email }}
+          </td>
+          <td>
+            {{ data.address.city}}
+          </td>
+        </tr>
+        
+      </tbody>
+  </table>
+
+  {{y}}
+{{x}}
+{{b}}
+
+
+<button (click)="change()" id="t">My Button</button>
+</div>
